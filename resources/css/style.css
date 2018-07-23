@@ -2,10 +2,15 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+
+
 /* contain *logo* & *main-nav* */
 header {
   /* VISUAL */ border: 1px solid black;
   display: flex;
+  z-index: 1;
+  background: white;
   position: fixed;
   width: 100%;
   font-family: Verdana;
@@ -42,5 +47,208 @@ header {
 }
 
 .main-nav nav span a {
+  color: black;
+}
+
+/* Organizer */
+.organizer {
+  display: flex;
+  justify-content: center;
+}
+
+/*main content - contains columns*/
+.main-content {
+  display: inline-flex;
+  padding-top: 20px;
+  margin-bottom: 50px;
+  position: relative;
+  top: 80px;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.col {
+  margin-right: 30px;
+}
+
+/* LARGE COLUMN */
+#large {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 630px;
+}
+
+#lead-story, #lead-story .title {
+  width: 100%;
+}
+
+#wine-image {
+  display: flex;
+  background-image: url("../images/wine.png");
+  height: 300px;
+}
+
+.title {
+
+  margin: 0;
+  padding: 0;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+}
+
+.story div {
+}
+
+#story2 {
+  width: 300px;
+}
+
+#fall-image-text {
+  display: flex;
+  justify-content: center;
+  background-image: url("../images/fall-season.png");
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  border: none;
+  height: 300px;
+}
+
+#fall-image-text p {
+  margin: 0;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+#story3 {
+  width: 300px;
+}
+
+#camera-image-text {
+  display: flex;
+  justify-content: center;
+  background-image: url("../images/hipster-camera.png");
+  margin-top: 10px;
+  border: none;
+  height: 300px;
+}
+
+#camera-image-text p {
+  margin: 0;
+  width: 80%;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+/* MEDIUM column */
+#medium {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+}
+
+.story {
+}
+
+#story4-title {
+  margin-top: 20px;
+}
+
+#story4 p {
+  margin-bottom: 0px;
+}
+
+#cat-image-text {
+  display: flex;
+  justify-content: center;
+  background-image: url("../images/cat-ceo.png");
+}
+
+#cat-image-text p {
+  margin: 0;
+  padding: 0;
+  height: 300px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+/* SMALL COLUMN */
+#small{
+  width: 240px;
+}
+
+#small div {
+}
+
+#news-bite {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#news-bite h3 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.side-links p{
+  background-color: WhiteSmoke;
+  border-bottom: 1px solid black;
+  margin: 0;
+  padding: 15px;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+}
+
+/* footer section */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: mediumaquamarine;
+  position: relative;
+  top: 80px;
+  margin: auto;
+  height: 300px;
+  font-family: Verdana;
+  font-size: 12px;
+}
+
+.footer-organizer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+}
+
+#footer-logo-name {
+  margin-right: 15px;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.footer-nav {
+  margin-left: 20px;
+}
+
+.footer-nav span a {
+  margin-left: 20px;
   color: black;
 }
