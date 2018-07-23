@@ -1,0 +1,46 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+/* contain *logo* & *main-nav* */
+header {
+  /* VISUAL */ border: 1px solid black;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  margin: 10px;
+  min-width: 50%;
+  align-items: center;
+}
+
+.logo span {
+  display: inline-block;
+  margin-left: 15px;
+  color: mediumaquamarine;
+}
+
+.main-nav {
+  display: flex;
+  min-width: 50%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.main-nav nav {
+  margin-right: 30px;
+}
+
+.main-nav nav span {
+  margin-right: 20px;
+}
+
+.main-nav nav span a {
+  color: black;
+}
